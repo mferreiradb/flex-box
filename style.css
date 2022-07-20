@@ -118,7 +118,17 @@ b {
 @media (max-width: 990px) {
     .div-flex-large {
         background-color: #d70f0f;
-        width: 200px;
+        width: 150px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 746px) {
+    .div-flex-large {
+        background-color: #0fd726;
+        width: 140px;
         height: 70px;
         margin: 10px;
         color: white;
@@ -141,7 +151,7 @@ b {
 
     .div-flex-large {
         background-color: rgb(254, 133, 13);
-        width: 230px;
+        width: 220px;
         height: 70px;
         margin: 10px;
         color: white;
@@ -207,6 +217,17 @@ b {
     .div-flex-large {
         background-color: rgb(162, 254, 13);
         width: 130px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+
+}
+
+@media (max-width: 326px) {
+    .div-flex-large {
+        background-color: rgb(250, 254, 13);
+        width: 120px;
         height: 70px;
         margin: 10px;
         color: white;
