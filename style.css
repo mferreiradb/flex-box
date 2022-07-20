@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.notas {
+    padding: 10px;
+    width: calc(100vw - 20px);
+    font-size: 18px;
+}
+
+b {
+    font-size: 20px;
+}
+
+.topo {
+    font-size: 20px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    width: calc(100vw - 20px);
+}
+
+.topo a {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.flex-div {
+    padding: 5px;
+    width: calc(100vw - 17px);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.conteudo h1 {
+    margin: 10px;
+}
+
+.container {
+    background-color: aquamarine;
+    margin: 10px;
+    width: calc(100% / 2 - 20px);
+}
+
+.disp-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-row {
+    display: flex;
+}
+
+.div-flex {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+}
+
+.disp div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap .div-flex {
+    background-color: blue;
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    color: white;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.nowrap .div-flex {
+    background-color: blue;
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    color: white;
+}
+
+.content {justify-content: flex-start;} .content-end {justify-content: flex-end;} .content-center {justify-content: center;}
+
+.content-around {justify-content: space-around;} .content-between {justify-content: space-between;}
+
+@media (max-width: 720px) {
+    .flex-div {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .div-flex {
+        width: 70px;
+        height: 70px;
+    }
+
+    .disp div {
+        width: 70px;
+        height: 70px;
+    }
+
+    .wrap .div-flex {
+        height: 70px;
+        width: 110px;
+    }
+
+    .nowrap .div-flex {
+        height: 70px;
+        width: 110px;
+    }
+
+    .topo {
+        font-size: 18px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 0;
+        width: 100vw;
+    }
+    
+    .topo a {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    .conteudo h1 {
+        margin: 10px;
+    }
+
+    .notas {
+        padding: 10px;
+        width: calc(100vw - 20px);
+        font-size: 20px;
+    }
+    
+    b {
+        font-size: 22px;
+    }
+}
