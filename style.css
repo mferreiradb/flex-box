@@ -79,8 +79,8 @@ b {
     flex-wrap: wrap;
 }
 
-.wrap .div-flex {
-    background-color: blue;
+.nowrap .div-flex, .div-flex-large {
+    background-color: rgb(0, 0, 21);
     height: 100px;
     width: 300px;
     margin: 10px;
@@ -91,17 +91,39 @@ b {
     flex-wrap: nowrap;
 }
 
-.nowrap .div-flex {
-    background-color: blue;
-    height: 100px;
-    width: 300px;
-    margin: 10px;
-    color: white;
-}
-
 .content {justify-content: flex-start;} .content-end {justify-content: flex-end;} .content-center {justify-content: center;}
 
 .content-around {justify-content: space-around;} .content-between {justify-content: space-between;}
+
+@media (max-width: 1346px) {
+    .div-flex-large {
+        background-color: #e9099f;
+        width: 211px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 1080px) {
+    .div-flex-large {
+        background-color: #04fa00;
+        width: 211px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 990px) {
+    .div-flex-large {
+        background-color: #d70f0f;
+        width: 200px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+}
 
 @media (max-width: 720px) {
     .flex-div {
@@ -115,6 +137,14 @@ b {
     .div-flex {
         width: 70px;
         height: 70px;
+    }
+
+    .div-flex-large {
+        background-color: rgb(254, 133, 13);
+        width: 230px;
+        height: 70px;
+        margin: 10px;
+        color: white;
     }
 
     .disp div {
@@ -160,4 +190,26 @@ b {
     b {
         font-size: 22px;
     }
+}
+
+@media (max-width: 500px) {
+    .div-flex-large {
+        background-color: rgb(13, 222, 254);
+        width: 150px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .div-flex-large {
+        background-color: rgb(162, 254, 13);
+        width: 130px;
+        height: 70px;
+        margin: 10px;
+        color: white;
+    }
+
 }
